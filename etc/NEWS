@@ -3838,6 +3838,12 @@ reappear on mouse-over.  (Requires OS X 10.6 or later.)
 ** On Mac OS X, dragging a file into Emacs visits the file, like on
 other platforms, rather than inserting its contents into the buffer.
 
+** New variable `w32-pipe-buffer-size'.
+It can be used to tune the size of the buffer of pipes created for
+communicating with subprocesses, when the program run by a subprocess
+exhibits unusual buffering behavior.  Default is zero, which lets the
+OS use its default size.
+
 
 ----------------------------------------------------------------------
 This file is part of GNU Emacs.
